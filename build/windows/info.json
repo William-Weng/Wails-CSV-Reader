@@ -1,15 +1,15 @@
 {
 	"fixed": {
-		"file_version": "0.0.1"
+		"file_version": "0.1.0"
 	},
 	"info": {
 		"0000": {
-			"ProductVersion": "0.0.1",
-			"CompanyName": "My Company",
-			"FileDescription": "A program that does X",
-			"LegalCopyright": "(c) 2025, My Company",
-			"ProductName": "CSV 讀取器",
-			"Comments": "Some Product Comments"
+			"ProductVersion": "0.1.0",
+			"CompanyName": "William-Weng",
+			"FileDescription": "使用 Wails、Go 與 Svelte 製作的 CSV 卡片瀏覽小工具",
+			"LegalCopyright": "Copyright © 2026, William Weng",
+			"ProductName": "CSV Reader",
+			"Comments": "Built with Wails, Go, Svelte"
 		}
 	}
 }

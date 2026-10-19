@@ -5,24 +5,24 @@
 		<key>CFBundleExecutable</key>
 		<string/>
 		<key>CFBundleGetInfoString</key>
-		<string>Some Product Comments</string>
+		<string>Built with Wails, Go, Svelte</string>
 		<key>CFBundleIconFile</key>
 		<string>icons</string>
 		<key>CFBundleIdentifier</key>
-		<string>com.mycompany.myproduct</string>
+		<string>idv.williamweng.wails-csv-reader</string>
 		<key>CFBundleName</key>
-		<string>CSV 讀取器</string>
+		<string>CSV Reader</string>
 		<key>CFBundlePackageType</key>
 		<string>APPL</string>
 		<key>CFBundleShortVersionString</key>
-		<string>0.0.1</string>
+		<string>0.1.0</string>
 		<key>CFBundleVersion</key>
-		<string>0.0.1</string>
+		<string>20261019</string>
 		<key>LSMinimumSystemVersion</key>
-		<string>12.0.0</string>
+		<string>15.0.0</string>
 		<key>NSHighResolutionCapable</key>
 		<string>true</string>
 		<key>NSHumanReadableCopyright</key>
-		<string>(c) 2025, My Company</string>
+		<string>Copyright © 2026, William Weng</string>
 	</dict>
 </plist>

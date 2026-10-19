@@ -1,7 +1,7 @@
 [Desktop Entry]
 Version=1.0
-Name=CSV 讀取器
-Comment=A program that does X
+Name=CSV Reader
+Comment=使用 Wails、Go 與 Svelte 製作的 CSV 卡片瀏覽小工具
 # The Exec line includes %u to pass the URL to the application
 Exec=/usr/local/bin/ %u
 Terminal=false

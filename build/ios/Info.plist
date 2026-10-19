@@ -3,21 +3,21 @@
 <plist version="1.0">
 	<dict>
 		<key>CFBundleDisplayName</key>
-		<string>CSV 讀取器</string>
+		<string>CSV Reader</string>
 		<key>CFBundleExecutable</key>
 		<string/>
 		<key>CFBundleGetInfoString</key>
-		<string>Some Product Comments</string>
+		<string>Built with Wails, Go, Svelte</string>
 		<key>CFBundleIdentifier</key>
-		<string>com.mycompany.myproduct</string>
+		<string>idv.williamweng.wails-csv-reader</string>
 		<key>CFBundleName</key>
-		<string>CSV 讀取器</string>
+		<string>CSV Reader</string>
 		<key>CFBundlePackageType</key>
 		<string>APPL</string>
 		<key>CFBundleShortVersionString</key>
-		<string>0.0.1</string>
+		<string>0.1.0</string>
 		<key>CFBundleVersion</key>
-		<string>0.0.1</string>
+		<string>0.1.0</string>
 		<key>LSRequiresIPhoneOS</key>
 		<true/>
 		<key>MinimumOSVersion</key>
@@ -30,7 +30,7 @@
 			<true/>
 		</dict>
 		<key>NSHumanReadableCopyright</key>
-		<string>(c) 2025, My Company</string>
+		<string>Copyright © 2026, William Weng</string>
 		<key>UILaunchStoryboardName</key>
 		<string>LaunchScreen</string>
 		<key>UIRequiredDeviceCapabilities</key>

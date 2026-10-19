@@ -2,6 +2,8 @@
 
 使用 Wails、Go 與 Svelte 製作的 **CSV 卡片瀏覽小工具**。將 CSV 檔案拖入視窗，即可把每列資料轉成卡片，方便瀏覽素材網站、指令筆記與程式碼範例。
 
+https://github.com/user-attachments/assets/9ccf5aaf-bc21-43e2-96cd-d1942e40eaaf
+
 ## 功能
 
 - 拖放 CSV 檔案載入資料。
