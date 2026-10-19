@@ -1,0 +1,163 @@
+.scroll-area {
+  flex: 1;
+  min-height: 0;
+  padding: 24px;
+
+  overflow-y: auto;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns:
+    ~"repeat(auto-fill, minmax(min(100%, @{card-min-width}), 1fr))";
+  align-content: start;
+  gap: @card-gap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  min-width: 0;
+  height: @card-height;
+  padding: 16px 12px;
+
+  border: 1px solid @border-color;
+  border-radius: @radius;
+  background: @card-background;
+  color: @text-color;
+
+  box-shadow: @card-shadow;
+
+  // 標題
+  .card-title {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    min-width: 0;
+    height: 44px;
+    margin: 0;
+    padding: 0 10px;
+
+    border: 1px solid @title-border;
+    border-radius: @radius;
+    background: @title-background;
+    color: @title-text;
+
+    font-family: inherit;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+
+    span {
+      display: block;
+
+      min-width: 0;
+      overflow: hidden;
+
+      color: inherit;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    &.clickable {
+      &:hover {
+        border-color: @title-hover;
+        background: @title-hover;
+      }
+
+      &:active {
+        border-color: @title-active;
+        background: @title-active;
+      }
+    }
+  }
+
+  // 說明：填滿剩餘空間
+  .card-description {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+    min-height: 0;
+    padding: 16px;
+    overflow: auto;
+
+    border: 1px solid @description-background;
+    border-radius: @radius;
+    background: @description-background;
+
+    p {
+      flex-shrink: 0;
+
+      width: 100%;
+      margin: auto 0;
+
+      color: @description-text;
+      font-size: 16px;
+      line-height: 1.7;
+      text-align: center;
+
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+    }
+  }
+
+  // 範例：保留格式，長行可水平捲動
+  .card-example {
+    flex-shrink: 0;
+
+    height: 92px;
+    padding: 10px 12px;
+    overflow: auto;
+
+    border: 1px solid @border-color;
+    border-radius: @radius;
+    background: @code-background;
+
+    pre {
+      margin: 0;
+
+      color: @text-color;
+      font-family: @font-mono;
+      font-size: 13px;
+      line-height: 1.5;
+      text-align: left;
+      white-space: pre;
+    }
+
+    code {
+      color: inherit;
+      font-family: inherit;
+    }
+  }
+
+  // 分類標籤
+  .card-tags {
+    display: flex;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+
+    padding: 0;
+
+    .type-tag {
+      display: inline-block;
+      padding: 4px 12px;
+
+      border-radius: @radius;
+      background: var(--type-color, @tag-fallback);
+      color: @text-color;
+
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+  }
+}

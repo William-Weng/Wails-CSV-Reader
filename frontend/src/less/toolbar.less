@@ -1,0 +1,68 @@
+.toolbar {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 24px;
+
+  height: auto;
+  padding: 20px 32px;
+
+  border-bottom: 1px solid @border-color;
+  background: @toolbar-background;
+
+  .toolbar-info {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    gap: 16px;
+
+    white-space: nowrap;
+
+    h1 {
+      margin: 0;
+
+      color: @text-color;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    > span {
+      color: @secondary-text;
+      font-size: 13px;
+    }
+  }
+
+  .toolbar-file {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 4px;
+
+    min-width: 0;
+  }
+
+  .file-label {
+    color: @muted-text;
+    font-size: 12px;
+  }
+
+  .file-path {
+    display: block;
+
+    color: @file-path-color;
+    font-family: @font-mono;
+    font-size: 13px;
+    line-height: 1.5;
+
+    // 完整顯示路徑，包含結尾的 .csv。
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    overflow: visible;
+    text-overflow: clip;
+  }
+
+  .file-placeholder {
+    color: @muted-text;
+    font-size: 14px;
+  }
+}
