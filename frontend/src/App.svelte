@@ -51,8 +51,7 @@
             // 資料成功載入後，才更新目前顯示的檔案路徑。
             currentFilePath = data.path;
         } catch (err) {
-            console.error("讀取 CSV 失敗：", err);
-            dialog("warning", "錯誤", `${err}`);
+            dialog("warning", "錯誤", `讀取 CSV 失敗：${err}`);
         }
     }
 
@@ -81,13 +80,13 @@
             const url = new URL(value);
 
             if (url.protocol !== "https:" && url.protocol !== "http:") {
-                console.warn("不支援的網址協定：", url.protocol);
+                dialog("warning", "錯誤", `不支援的網址協定：${url.protocol}`);
                 return;
             }
 
             await Browser.OpenURL(url.href);
         } catch (error) {
-            console.error("無法開啟外部網址：", value, error);
+            dialog("warning", "錯誤", `無法開啟外部網址：${value} - ${error}`);
         }
     }
 </script>
@@ -112,6 +111,7 @@
             {/if}
         </div>
     </header>
+
     <main class="scroll-area" data-file-drop-target>
         <div class="card-grid">
             {#each filteredItems as item (item.id)}
@@ -120,7 +120,7 @@
                         <button
                             class="card-title clickable"
                             type="button"
-                            title={`${item.title}：使用外部瀏覽器開啟`}
+                            title={`${item.title}`}
                             onclick={() => {
                                 if (item.url) {
                                     void openExternalURL(item.url);
