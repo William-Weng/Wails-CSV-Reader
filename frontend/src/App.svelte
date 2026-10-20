@@ -1,4 +1,7 @@
 <script lang="ts">
+    import Toolbar from "./component/Toolbar.svelte";
+    import SearchBar from "./component/SearchBar.svelte";
+
     import { Browser, Events } from "@wailsio/runtime";
     import { onMount } from "svelte";
     import { dialog } from "./lib/dialog";
@@ -92,25 +95,10 @@
 </script>
 
 <div class="app">
-    <header class="toolbar">
-        <div class="toolbar-info">
-            <h1>CSV 讀取器</h1>
-            <span>共 {items.length} 筆</span>
-        </div>
-
-        <div class="toolbar-file">
-            {#if currentFilePath}
-                <span class="file-label">目前檔案</span>
-                <span class="file-path" title={currentFilePath}>
-                    {currentFilePath}
-                </span>
-            {:else}
-                <span class="file-placeholder">
-                    請拖入 CSV 檔案
-                </span>
-            {/if}
-        </div>
-    </header>
+    <Toolbar
+      totalCount={items.length}
+      {currentFilePath}
+    />
 
     <main class="scroll-area" data-file-drop-target>
         <div class="card-grid">
@@ -166,31 +154,16 @@
         </div>
     </main>
 
-    <footer class="search-bar">
-        <div class="search-content">
-            <label for="card-search">Search</label>
-
-            <div class="search-input-wrap">
-                <input
-                    id="card-search"
-                    type="search"
-                    placeholder="搜尋標題、說明、網址、範例或分類…"
-                    bind:value={searchText}
-                    onkeydown={(event) => {
-                        if (event.key === "Escape") {
-                            searchText = "";
-                        }
-                    }}
-                />
-            </div>
-
-            <span class="search-count" role="status">
-                {filteredItems.length} / {items.length} 筆
-            </span>
-        </div>
-    </footer>
+    <SearchBar
+        bind:searchText
+        totalCount={items.length}
+        filteredCount={filteredItems.length}
+      />
 </div>
 
 <style lang="less">
-  @import "./less/main.less";
+  @import "./less/variables.less";
+  @import "./less/mixins.less";
+  @import "./less/base.less";
+  @import "./less/cards.less";
 </style>

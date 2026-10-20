@@ -64,3 +64,24 @@
     white-space: nowrap;
   }
 }
+
+// 手機
+@media (max-width: @breakpoint-mobile) {
+
+  .search-bar {
+    padding: 12px;
+
+    .search-content {
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .search-input-wrap {
+      flex-basis: 65%;
+    }
+
+    .search-count {
+      margin-left: auto;
+    }
+  }
+}

@@ -41,3 +41,17 @@
   font-size: 16px;
   text-align: center;
 }
+
+// 手機
+@media (max-width: @breakpoint-mobile) {
+  .scroll-area {
+    padding: 16px;
+  }
+}
+
+// 減少動態效果
+@media (prefers-reduced-motion: reduce) {
+  .app button {
+    transition: none;
+  }
+}
