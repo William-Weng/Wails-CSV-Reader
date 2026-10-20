@@ -1,10 +1,5 @@
 <script lang="ts">
-    interface Props {
-        title: string;
-        url?: string | null;
-        openExternalURL: (url: string) => void | Promise<void>;
-    }
-
+    interface Props { title: string; url?: string | null; openExternalURL: (url: string) => void | Promise<void>; }
     let { title, url, openExternalURL }: Props = $props();
 </script>
 

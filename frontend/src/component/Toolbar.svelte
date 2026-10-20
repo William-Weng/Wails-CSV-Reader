@@ -11,13 +11,9 @@
   <div class="toolbar-file">
     {#if currentFilePath}
       <span class="file-label">目前檔案</span>
-      <span class="file-path" title={currentFilePath}>
-        {currentFilePath}
-      </span>
+      <span class="file-path" title={currentFilePath}>{currentFilePath}</span>
     {:else}
-      <span class="file-placeholder">
-        請拖入 CSV 檔案
-      </span>
+      <span class="file-placeholder">請拖入 CSV 檔案</span>
     {/if}
   </div>
 </header>
