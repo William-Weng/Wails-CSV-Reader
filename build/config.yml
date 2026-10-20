@@ -3,11 +3,11 @@ version: '3'
 info:
   companyName: "William-Weng"
   productName: "CSV Reader"
-  productIdentifier: "idv.williamweng.wails-csv-reader"
+  productIdentifier: "idv.william-weng.wails-csv-reader"
   description: "使用 Wails、Go 與 Svelte 製作的 CSV 卡片瀏覽小工具"
   copyright: "Copyright © 2026, William Weng"
   comments: "Built with Wails, Go, Svelte"
-  version: "0.1.0"
+  version: "0.1.1"
 
 dev_mode:
   root_path: .

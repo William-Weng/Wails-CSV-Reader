@@ -9,17 +9,17 @@
 		<key>CFBundleIconFile</key>
 		<string>icons</string>
 		<key>CFBundleIdentifier</key>
-		<string>idv.williamweng.wails-csv-reader</string>
+		<string>idv.william-weng.wails-csv-reader</string>
 		<key>CFBundleName</key>
 		<string>CSV Reader</string>
 		<key>CFBundlePackageType</key>
 		<string>APPL</string>
 		<key>CFBundleShortVersionString</key>
-		<string>0.1.0</string>
+		<string>0.1.1</string>
 		<key>CFBundleVersion</key>
-		<string>20261019</string>
+		<string>20261020</string>
 		<key>LSMinimumSystemVersion</key>
-		<string>15.0.0</string>
+		<string>12.0.0</string>
 		<key>NSHighResolutionCapable</key>
 		<string>true</string>
 		<key>NSHumanReadableCopyright</key>
