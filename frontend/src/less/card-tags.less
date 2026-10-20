@@ -1,0 +1,22 @@
+.card-tags {
+  display: flex;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+
+  padding: 0;
+
+  .type-tag {
+    display: inline-block;
+    padding: 4px 12px;
+
+    border-radius: @radius;
+    background: var(--type-color, @tag-fallback);
+    color: @text-color;
+
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+}

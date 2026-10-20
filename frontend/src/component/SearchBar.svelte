@@ -16,11 +16,7 @@
         type="search"
         placeholder="搜尋標題、說明、網址、範例或分類…"
         bind:value={searchText}
-        onkeydown={(event) => {
-          if (event.key === "Escape") {
-            searchText = "";
-          }
-        }}
+        onkeydown={(event) => { if (event.key === "Escape") { searchText = ""; }} }
       />
     </div>
 

@@ -1,0 +1,29 @@
+// 說明：填滿剩餘空間
+.card-description {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+
+  min-height: 0;
+  padding: 16px;
+  overflow: auto;
+
+  border: 1px solid @description-background;
+  border-radius: @radius;
+  background: @description-background;
+
+  p {
+    flex-shrink: 0;
+
+    width: 100%;
+    margin: auto 0;
+
+    color: @description-text;
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: center;
+
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+  }
+}

@@ -14,21 +14,6 @@
   *::after {
     box-sizing: border-box;
   }
-
-  button {
-    border-radius: @radius;
-    color: @text-color;
-    font: inherit;
-    cursor: pointer;
-
-    transition:
-      background-color @transition-duration ease,
-      border-color @transition-duration ease;
-
-    &:focus-visible {
-      .focus-ring();
-    }
-  }
 }
 
 .empty-state {
@@ -46,12 +31,5 @@
 @media (max-width: @breakpoint-mobile) {
   .scroll-area {
     padding: 16px;
-  }
-}
-
-// 減少動態效果
-@media (prefers-reduced-motion: reduce) {
-  .app button {
-    transition: none;
   }
 }

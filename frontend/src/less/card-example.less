@@ -1,0 +1,28 @@
+// 範例：保留格式，長行可水平捲動
+.card-example {
+  flex-shrink: 0;
+
+  height: 92px;
+  padding: 10px 12px;
+  overflow: auto;
+
+  border: 1px solid @border-color;
+  border-radius: @radius;
+  background: @code-background;
+
+  pre {
+    margin: 0;
+
+    color: @text-color;
+    font-family: @font-mono;
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: left;
+    white-space: pre;
+  }
+
+  code {
+    color: inherit;
+    font-family: inherit;
+  }
+}
